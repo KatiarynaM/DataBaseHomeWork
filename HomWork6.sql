@@ -255,8 +255,8 @@ WHEN (@time > 12 AND @time < 18) THEN SELECT 'Добрый день';
 WHEN (@time > 18 AND @time < 24) THEN SELECT 'Добрый вечер';
 END CASE;
 END//
-
-call hello()//
+delimiter ;
+call hello();
 
  
 /* Создайте таблицу logs типа Archive. Пусть при каждом создании записи в таблицах users, communities и messages в таблицу
